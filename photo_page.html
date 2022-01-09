@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的摄影作品集</title>
+    <link rel="stylesheet" href="/css/photo.css">
+    <link rel="stylesheet" href="/css/Background.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/rotate.css">
+
+</head>
+<body>
+<div class="topNavBar clearfix">
+    <a href="/people.html" class="logo" alt="logo">
+        <span class="My">My </span>
+        <span class="Photography">Photography</span>
+    </a>
+    <nav>
+        <ul class="clearfix">
+            <li><a href="people.html">人文</a></li>
+            <li><a href="landscape.html">风景</a></li>
+            <li><a href="buildings.html">建筑</a></li>
+            <li><a href="camera.html">拍摄器材</a></li>
+            <li><a href="index.html">登出</a></li>
+        </ul>
+    </nav>
+</div>
+<div>
+    <span class="word" id="name"></span>
+    <a href="javascript:;" onClick="javascript :history.back(-1);">
+        <img src="/img/back.png" class="icon"/>
+        <span class="word_back">back</span>
+    </a>
+</div>
+<!--图片处理-->
+<div class="wrapper">
+    <img src="" class="rotate" id="photo" alt="Picture"/>
+</div>
+<div class="container">
+    <div class="wrapper">
+        <button class="big_button" id="rotate">旋转180度</button>
+    </div>
+    <div class="range" id="brightness">
+        <h3 class="text">亮度: <span>1</span></h3>
+        <input type="range" value="1" min="0" max="2" step="0.01"/>
+    </div>
+    <div class="range" id="opacity">
+        <h3 class="text">透明度: <span>1</span></h3>
+        <input type="range" value="1" min="0" max="1" step="0.01"/>
+    </div>
+    <div class="range" id="saturate">
+        <h3 class="text">饱和度: <span>1</span></h3>
+        <input type="range" value="1" min="0" max="2" step="0.01"/>
+    </div>
+    <div class="range" id="invert">
+        <h3 class="text">反转: <span>0</span></h3>
+        <input type="range" value="0" min="0" max="1" step="0.01"/>
+    </div>
+    <div class="range" id="contrast">
+        <h3 class="text">对比度: <span>1</span></h3>
+        <input type="range" value="1" min="0" max="2" step="0.01"/>
+    </div>
+    <div class="range" id="grayscale">
+        <h3 class="text">灰度: <span>0</span></h3>
+        <input type="range" value="0" min="0" max="1" step="0.01"/>
+    </div>
+    <div class="range" id="sepia">
+        <h3 class="text">褐色滤镜: <span>0</span></h3>
+        <input type="range" value="0" min="0" max="1" step="0.01"/>
+    </div>
+
+    <!--style-->
+    <h2 class="text" style="text-align: center;">风格</h2>
+    <h2 class="text" style="text-align: center;">（需要时间加载）</h2>
+    <img src="" class="filter" id="origin" alt="Picture"/>
+    <canvas class="filter" id="canvas" style="float: right ;"></canvas>
+    <button id="vintage">vintage</button>
+    <button id="lomo">lomo</button>
+    <button id="clarity">clarity</button>
+    <button id="sunrise">sunrise</button>
+    <button id="love">love</button>
+
+    <!--crop-->
+    <div class="wrapper">
+        <h2 class="text">裁剪</h2>
+    </div>
+    <div class="wrapper">
+        <img id="crop-img" src="" alt="Picture"/>
+        <button class="big_button" id="crop-btn">crop</button>
+    </div>
+    <div id="crop-res"></div>
+</div>
+<script type="text/javascript" src="javascript/photo_page.js"></script>
+
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.css>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js></script>
+</body>
+</html>

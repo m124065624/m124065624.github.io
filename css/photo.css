@@ -1,0 +1,151 @@
+.index-title {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.index-title-text {
+    color: #C1C3C6;
+    font-size: 64px;
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.masonry {
+    -moz-column-count: 3; /* Firefox */
+    -webkit-column-count: 3; /* Safari 和 Chrome */
+    column-count: 3;
+    -moz-column-gap: 2em;
+    -webkit-column-gap: 2em;
+    column-gap: 2em;
+    width: 90%;
+    margin: 2em auto;
+}
+
+.item {
+    margin-bottom: 2em;
+    -moz-page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
+    background: #1D1F20;
+    color: #fff;
+    text-align: center;
+}
+
+
+.pic {
+    width: 100%;
+    height: auto;
+    max-width: 420px;
+    max-height: 280px;
+    display: flex;
+    align-content: center;
+}
+
+#photo {
+    width: 60%;
+    height: 60%;
+}
+
+.word {
+    font-size: 30px;
+    margin-top: 25px;
+    padding-left: 70px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet  MS ", sans-serif;
+    color: gray;
+}
+
+.icon {
+    width: 40px;
+    height: 25px;
+    float: right;
+    margin-right: 5em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.word_back {
+    font-size: 30px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet  MS ", sans-serif;
+    float: right;
+    margin-right: 7px;
+    color: gray;
+}
+
+.text {
+    margin-top: 0px;
+    color: #373b3d;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet  MS ", sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+    .masonry {
+        column-count: 2; /* two columns on larger phones */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .masonry {
+        column-count: 1; /* two columns on larger phones */
+    }
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    padding: 5%;
+    padding-top: 2%;
+    border: 0;
+}
+
+.text {
+    margin-top: 0px;
+    color: gray;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet  MS ", sans-serif;
+}
+
+.wrapper {
+    margin: 20px auto;
+    text-align: center;
+}
+
+img, canvas {
+    max-width: 100%;
+}
+
+button {
+    display: inline-block;
+    margin: 15px;
+    margin-left: 0px;
+    padding: 10px;
+    background-color: gray;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    border-radius: 15px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.big_button{
+    width: 300px;
+}
+
+.range {
+    margin: 15px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.range input {
+    display: block;
+    width: 100%;
+    margin: 15px;
+    margin-left: 0px;
+    height: 8px;
+    border-radius: 4px;
+}
+
+.filter {
+    width: 45%;
+}
